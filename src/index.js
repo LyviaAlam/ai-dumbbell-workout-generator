@@ -1,1 +1,1 @@
-alert("Hello");
+alert("Get Ready to Sweat!");
