@@ -1,4 +1,68 @@
 body {
   text-align: center;
   font-family: "Hanken Grotesk", sans-serif;
+  background-color: #222831;
+}
+header {
+  color: #393e46;
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 30px auto;
+}
+a {
+  color: #f96d00;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  color: #f2f2f2;
+  margin-top: 20px;
+}
+
+.emphasis {
+  color: #f96d00;
+}
+.container {
+  background-color: #f2f2f2;
+  width: 800px;
+  border: 3px solid #f2f2f2;
+  border-radius: 10px;
+  margin: 65px auto 0px auto;
+  padding: 50px;
+}
+.text-input {
+  width: 60%;
+  border: #f96d00 solid 2px;
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.submit-button {
+  width: 15%;
+  border: 2px solid #f96d00;
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f96d00;
+  color: #f2f2f2;
+  margin-left: 5px;
+}
+.example {
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.workout {
+  border-radius: 10px;
+  border: 5px solid #f96d00;
+  background-color: #f2f2f2;
+  width: 800px;
+  margin: 25px auto;
+  padding: 50px;
+  color: #393e46;
+  font-size: 25px;
+  font-weight: bold;
 }

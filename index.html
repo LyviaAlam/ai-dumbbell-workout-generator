@@ -13,36 +13,43 @@
     <title>AI Dumbbell Workout Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Dumbbell Workout Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What do you want to workout?"
-          required
-          autofocus
-        />
-        <input type="submit" />
-        <div>e.g. Legs, Shoulders, Core etc...</div>
-      </form>
-      <p>You don’t have to be extreme. Just consistent!</p>
-    </main>
+    <div class="container">
+      <header>
+        AI <span class="emphasis">Dumbbell</span> Workout Generator
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="What do you want to workout?"
+            required
+            autofocus
+            class="text-input"
+          />
+          <input type="submit" class="submit-button" value="Generate" />
+          <div class="example">e.g. Legs, Shoulders, Core etc...</div>
+        </form>
+      </main>
+    </div>
+
+    <div class="workout">You don’t have to be extreme. Just consistent!</div>
+
+    <footer>
+      This project was coded by
+      <a href="https://github.com/LyviaAlam" target="_blank">Lyvia Alam</a>, is
+      open-sourced on
+      <a
+        href="https://github.com/LyviaAlam/ai-dumbbell-workout-generator"
+        target="_blank"
+        >Github</a
+      >
+      and hosted on
+      <a
+        href="https://ai-dumbbell-workout-generator.netlify.app/"
+        target="_blank"
+        >Netlify</a
+      >
+    </footer>
     <script src="src/index.js"></script>
   </body>
-  <footer>
-    This project was coded by
-    <a href="https://github.com/LyviaAlam" target="_blank">Lyvia Alam</a>, is
-    open-sourced on
-    <a
-      href="https://github.com/LyviaAlam/ai-dumbbell-workout-generator"
-      target="_blank"
-      >Github</a
-    >
-    and hosted on
-    <a href="https://ai-dumbbell-workout-generator.netlify.app/" target="_blank"
-      >Netlify</a
-    >
-  </footer>
 </html>
