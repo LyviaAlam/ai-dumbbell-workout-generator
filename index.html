@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Dumbbell Workout Generator</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         AI <span class="emphasis">Dumbbell</span> Workout Generator
       </header>
       <main>
-        <form>
+        <form id="workout-generator">
           <input
             type="text"
             placeholder="What do you want to workout?"
@@ -32,7 +33,9 @@
       </main>
     </div>
 
-    <div class="workout">You don’t have to be extreme. Just consistent!</div>
+    <div class="workout" id="workout-body">
+      You don’t have to be extreme. Just consistent!
+    </div>
 
     <footer>
       This project was coded by
