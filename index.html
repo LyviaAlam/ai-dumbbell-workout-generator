@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
     <title>AI Dumbbell Workout Generator</title>
   </head>
   <body>
@@ -22,10 +24,11 @@
         <form id="workout-generator">
           <input
             type="text"
-            placeholder="What do you want to workout?"
+            placeholder="What muscle group do you want to workout?"
             required
             autofocus
             class="text-input"
+            id="user-input"
           />
           <input type="submit" class="submit-button" value="Generate" />
           <div class="example">e.g. Legs, Shoulders, Core etc...</div>
@@ -33,9 +36,7 @@
       </main>
     </div>
 
-    <div class="workout" id="workout-body">
-      You don’t have to be extreme. Just consistent!
-    </div>
+    <div class="workout" id="workout-body"></div>
 
     <footer>
       This project was coded by

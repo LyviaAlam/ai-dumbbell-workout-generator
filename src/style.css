@@ -17,7 +17,7 @@ a {
 footer {
   text-align: center;
   color: #f2f2f2;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .emphasis {
@@ -60,9 +60,26 @@ footer {
   border: 5px solid #f96d00;
   background-color: #f2f2f2;
   width: 800px;
-  margin: 25px auto;
+  margin: 25px auto auto auto;
   padding: 50px;
   color: #393e46;
   font-size: 25px;
   font-weight: bold;
+}
+.ai-workout {
+  border-radius: 10px;
+  border: 5px solid #f96d00;
+  background-color: #f2f2f2;
+  width: 800px;
+  margin: 25px auto;
+  padding: 50px;
+  color: #393e46;
+  font-size: 18px;
+  text-align: left;
+}
+
+.ai-workout strong {
+  color: #f96d00;
+  text-align: left;
+  font-size: 18px;
 }
