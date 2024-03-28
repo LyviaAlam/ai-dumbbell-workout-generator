@@ -11,6 +11,7 @@ function quotesGenerator(response) {
 
 function displayQuote(response) {
   let quoteElement = document.querySelector("#workout-body");
+  quoteElement.style.display = "block";
   quoteElement.innerHTML = response.data.answer;
 }
 
@@ -19,11 +20,10 @@ function displayQuote(response) {
 function generatingWorkout(event) {
   event.preventDefault();
 
-  new Typewriter("#workout-body", {
-    strings: "Hang tight! Creating a new Workout just for you!",
-    autoStart: true,
-    delay: 50,
-  });
+  let waitingElement = document.querySelector("#workout-body");
+  waitingElement.innerHTML = `<div class="blink_me">
+        Hang tight! We're creating a new Workout just for you!
+      </div>`;
 
   createWorkout();
 }
@@ -33,9 +33,9 @@ function generatingWorkout(event) {
 function createWorkout() {
   let inputElement = document.querySelector("#user-input");
   let apiKey = "143af7fd5b08cab06a8bf5bo4f3btde9";
-  let prompt = `Create a 5 set dumbbell work out, working on the ${inputElement.value} of the body.`;
+  let prompt = `Create a 5 set dumbbell work out, working on the ${inputElement.value} muscle group of the body.`;
   let context =
-    "You are an experienced personal gym trainer, specialising in dumbbell workouts. Provide your answer in basic HTML. Sign the workout at the bottom with 'Workout by Shecodes AI' inside a <strong> element.";
+    "You are an experienced personal gym trainer, specialising in dumbbell workouts. Provide your answer in basic HTML. Sign the workout at the bottom with 'Workout with Shecodes AI' inside a <strong> element.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayWorkout);

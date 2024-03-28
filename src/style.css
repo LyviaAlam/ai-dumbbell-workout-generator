@@ -56,6 +56,7 @@ footer {
   font-size: 15px;
 }
 .workout {
+  display: none;
   border-radius: 10px;
   border: 5px solid #f96d00;
   background-color: #f2f2f2;
@@ -82,4 +83,18 @@ footer {
   color: #f96d00;
   text-align: left;
   font-size: 18px;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #393e46;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
